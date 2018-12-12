@@ -1,0 +1,39 @@
+
+body{
+  background: #00c6ff;
+  font-family: 'Poppins', sans-serif;
+  /* font-size: 16px; */
+  padding-top: 2%;
+  padding-bottom: 3%;
+}
+.link {
+  color: black;
+  padding: 3%;
+  margin-top: 3%;
+  text-decoration: none;
+}
+.info {
+  color: black;
+  text-decoration: underline;
+}
+main {
+  padding-top: 10%;
+}
+.contact-form{
+  background: #00c6ff;
+  border: #fff 2px solid;
+  border-radius: 15px;
+  margin: 0 auto;
+  padding-bottom: 5%;
+  width: 55%;
+  color: black;
+}
+.contact-form .form-control{
+  border-radius:0.25rem; 
+}
+.contact-form form{
+  padding: 10%;
+}
+footer {
+  padding: 10%;
+}
