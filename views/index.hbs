@@ -15,55 +15,32 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
 
     <!-- custom css file -->
-    <link rel="stylesheet" href="/public/stylesheets/style.css">
-    <title>dispatch | web sms just for yo
-        u</title>
+    <link rel="stylesheet" href="../public/stylesheets/style.css">
+    <title>dispatch | welcome aboard</title>
 </head>
   <body>
    
     <header>
-        <h1 class="brand">dispatch</h1> 
+        <h1 class="brand">dispatch</h1>
+       
     </header>
-    <div class="">
+    <div>
     <main>
-        <div class="form">
-        <div  class="contact-form">
-            <form action="/" method="post" enctype="multipart/form-data">
-            <!-- sender details -->
-            <div class="form-row ">
-                <div class="form-group col-md-12 col-sm-12 col-xs-12">
-                    <label for="inputName">Sender Name</label>
-                    <input type="text" maxlength="30" placeholder="James Bond" class="form-control" id="senderName" name="senderName" required>
-                </div>
-            
-            </div>
-            <!-- contacts .csv file upload-->
-            <div>
-                 <p>Upload recipient contacts. <a href="https://www.wikihow.com/Create-a-CSV-File" class="info">How create a .CSV file</a></p>
-            </div>
-            <div class="form-row">
-               <div class="form-group col-md-12 col-sm-12 col-xs-12"> 
-               <div class="custom-file">
-                 <input type="file" class="custom-file-input" id="inputFile" name="csvFile" required>
-                 <label class="custom-file-label" for="inputFile">upload contacts .csv file </label>
-               </div>
-               </div>
-            </div>
-            <!-- message textbox -->
-            <div class="form-row">
-                <div class="form-group col-md-12 col-sm-12 col-xs-12">
-                    <label for="inputMessage">Message</label>
-                    <textarea maxlength="150" class="form-control" placeholder="enter your message (150 characters max.)" rows="5" id="message" name="message" required></textarea>
-                </div>
-            </div>
-            <!-- submit button -->
-            
-            <button type="submit" class="btn btn-md btn-primary">send message</button>
-        </form>       
-        </div> 
-        </div>
+       <div class="container">
+       <div class="hero">
+           <img src="./img/undraw_messages1_9ah2.svg" alt="">
+       </div>
+       <div>
+        <div class="oauth">
+            <p>Welcome to dispatch. <span class="info"><a href="#">Learn more</a></span></p>
+        <button type="submit" class="btn btn-md light auth"><span><i class="fab fa-google"></i></span>Sign in with Google</i></button>
+        <button type="submit" class="btn btn-md auth"><span><i class="fab fa-facebook-f"></i></span> Sign in with Facebook</button>  
+        </div>    
+       </div>
+    </div>     
+
     </main>
-    <footer >
+    <footer>
 
     </footer>
     </div>
