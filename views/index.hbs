@@ -15,18 +15,29 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
 
     <!-- custom css file -->
-    <link rel="stylesheet" href="/public/stylesheets/style.css">
-    <title>dispatch | web sms just for yo
-        u</title>
+    <link rel="stylesheet" href="../public/stylesheets/style.css">
+
+    <title>dispatch | web sms just for you</title>
 </head>
   <body>
    
     <header>
-        <h1 class="brand">dispatch</h1> 
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Menu
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#"><span><i class="far fa-user"></i></span>Profile</a>
+              <a class="dropdown-item" href="#"><span><i class="fas fa-sign-out-alt"></i></span>Logout</a>
+            </div>
+        </div>
+        <h1 class="brand">dispatch</h1>
+        
+        
     </header>
-    <div class="">
+    <div class="container">
+    
     <main>
-        <div class="form">
+ <div class="form">
         <div  class="contact-form">
             <form action="/" method="post" enctype="multipart/form-data">
             <!-- sender details -->
@@ -58,14 +69,38 @@
             </div>
             <!-- submit button -->
             
-            <button type="submit" class="btn btn-md btn-primary">send message</button>
+            <button type="submit" class="btn btn-md action" id="send-msg"> <span><i class="far fa-paper-plane"></i></span> send message</button>
         </form>       
         </div> 
         </div>
+   
     </main>
     <footer >
 
     </footer>
     </div>
+     <!-- sweet alert cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+     <!-- bootstrap plugins-->
+    
+     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+     <script>
+      const sendMsg = document.getElementById('send-msg')
+
+      sendMsg.addEventListener('click', function() { 
+            Swal.fire({
+           
+            text: 'and We have liftoff!!!',
+            imageUrl: 'https://media.giphy.com/media/4WFEuV8V1BBxa8jU7M/giphy.gif',
+            imageWidth: 400,
+            imageHeight: 300,
+            imageAlt: 'Custom image',
+            animation: false
+        })
+
+        })
+     </script>
   </body>
 </html>
